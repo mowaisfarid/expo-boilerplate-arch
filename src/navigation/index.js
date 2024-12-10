@@ -1,7 +1,8 @@
-import { StyleSheet } from "react-native";
-import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Dashboard, Settings, LoginScreen, SignupScreen } from "@/features";
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import { Dashboard, Settings, LoginScreen, SignupScreen } from '../features';
+import { Dashboard, Settings, LoginScreen, SignupScreen } from '@/features';
 
 const Stack = createNativeStackNavigator();
 const RootContainer = () => {

@@ -1,5 +1,5 @@
 // screen
-export { default as Settings } from "./screens/settings";
+export { default as Settings } from './screens/settings';
 
 // containers
 

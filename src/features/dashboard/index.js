@@ -1,5 +1,5 @@
 // screen
-export { default as Dashboard } from "./screens/dashboard";
+export { default as Dashboard } from './screens/dashboard';
 
 // containers
 
