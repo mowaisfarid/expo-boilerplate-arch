@@ -11,9 +11,9 @@ export default [
     files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'], // Specify extensions here
     settings: {
       'import/resolver': {
-        node: {
-          paths: ['node_modules'],
-          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        alias: {
+          map: [['@', './src']],
+          extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
         },
       },
     },
