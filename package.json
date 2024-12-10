@@ -9,7 +9,14 @@
     "web": "expo start --web",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "npx --no-install commitlint --edit $1"
+    }
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.0",
@@ -37,7 +44,8 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-native": "^4.1.0",
-    "globals": "^15.13.0"
+    "globals": "^15.13.0",
+    "husky": "^9.1.7"
   },
   "private": true
 }
